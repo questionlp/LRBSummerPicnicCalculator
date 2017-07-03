@@ -1,0 +1,17 @@
+@media all {
+    body { font-family: sans-serif; font-size: 1.25rem; margin: 0.75em; max-width: 32em; }
+    div.fld { padding: 0.5em 0; }
+    div.lbl { display: inline-block; width: 8em; }
+    label { font-weight: bold; }
+    input { font-size: 100%; }
+    button { font-size: 100%; font-weight: 600; }
+    p.fn { border-top: 1px solid gray; font-size: 90%; padding-top: 1em; }
+}
+
+@media only screen and (max-device-width: 480px) {
+    body { font-family: sans-serif; margin: 0.25em; }
+    h1 { font-size: 133%; }
+    p { font-size: 95%; }
+    div.fld { padding: 0.33em 0; }
+    button { font-size: 100%; font-weight: 500; }
+}

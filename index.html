@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LRB Picnic Food Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+<script type="application/javascript" src="calc.js"></script>
+
+<h1>LRB Picnic Food Calculator</h1>
+
+<p>
+    You can use the following calculator to figure out what food to bring to the
+    <a href="http://littleredbandwagon.com">LRB</a>
+    <a href="https://www.facebook.com/events/926445407498048/">Summer Picnic</a> on Friday,
+    August 18, 2017 at Woodland Park in Seattle. The calculator generates a result based on
+    the rules that where discussed on
+    <a href="http://www.tenseventen.com/show/little-red-bandwagon/233-special-knock-knock-housekeeping">LRB #233</a>
+    (<a href="#fn">footnote</a>).
+</p>
+
+<form>
+    <div class="fld">
+        <div class="lbl"><label for="firstinitial">First Initial: </label></div>
+        <input type="text" size="9" maxlength="1" id="firstinitial">
+    </div>
+
+    <div class="fld">          
+        <div class="lbl"><label for="middleinitial">Middle Initial: </label></div>
+        <input type="text" size="9" maxlength="1" id="middleinitial">
+    </div>
+
+    <div class="fld">
+        <div class="lbl"><label for="lastinitial">Last Initial: </label></div>
+        <input type="text" size="9" maxlength="1" id="lastinitial">
+    </div>
+    
+    <br>
+
+    <div>
+        <div class="lbl">&nbsp;</div>
+        <button type="button" onclick="calculate()">Calculate</button>
+    </div>
+
+    <br>
+
+    <div class="fld">
+        <label for="femaleresult">Gals, please bring food that starts with:&nbsp;&nbsp;</label>
+        <input type="text" size="8" id="femaleresult" readonly>
+    </div>
+
+    <div class="fld">
+        <label for="maleresult">Guys, please bring food that starts with:&nbsp;</label>
+        <input type="text" size="8" id="maleresult" readonly>
+    </div>
+</form>
+
+<p class="fn" id="fn">
+    Slight liberties were taken with calculating the result for guys; as, there is a slim chance that
+    subtracting three from the sum leads to zero. In such cases, the result will come back with "A".
+</p>
+
+</body>
+</html>
