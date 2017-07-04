@@ -68,6 +68,16 @@ function calculate() {
         return;
     }
 
+    // Display div#bonus if middle initial is "Q"
+    let divbonus = document.getElementById('bonus');
+    if (letter2.toLowerCase() == 'q') {
+        divbonus.style.display = 'block';
+        divbonus.style.visibility = 'visible';
+    } else {
+        divbonus.style.display = 'none';
+        divbonus.style.visibility = 'hidden';
+    }
+
     let femaleResult = calculateFemale(letter1, letter2, letter3);
     let maleResult = calculateMale(letter1, letter2, letter3);
 

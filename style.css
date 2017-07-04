@@ -7,6 +7,7 @@
     button { font-size: 100%; font-weight: 600; }
     p.fn { border-top: 1px solid gray; font-size: 90%; padding-top: 1em; }
     input#femaleresult, input#maleresult { border: none; font-size: 150%; font-weight: 600; }
+    div#bonus { display: none; visibility: hidden; }
 }
 
 @media only screen and (max-device-width: 480px) {
