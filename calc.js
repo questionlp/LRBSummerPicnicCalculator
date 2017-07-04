@@ -68,9 +68,11 @@ function calculate() {
         return;
     }
 
-    // Display div#bonus if middle initial is "Q"
+    // Display div#bonus if any one of the three initials is "Q"
     let divbonus = document.getElementById('bonus');
-    if (letter2.toLowerCase() == 'q') {
+    if ((letter1.toLowerCase() == 'q') ||
+        (letter2.toLowerCase() == 'q') ||
+        (letter3.toLowerCase() == 'q')) {
         divbonus.style.display = 'block';
         divbonus.style.visibility = 'visible';
     } else {
